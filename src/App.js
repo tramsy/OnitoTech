@@ -1,8 +1,12 @@
 import React from "react";
-
+import Register from "./Register";
 
 function App(){
-    return <h3>Hello world...</h3>
+    return (
+        <main className="main">
+            <Register />
+        </main>
+    )
 }
 
 
