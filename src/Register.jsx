@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './register.css'
 import { useFormik } from 'formik'
 import Personal from './Personal'
@@ -6,9 +6,9 @@ import Contact from './Contact'
 import Address from './Address'
 import Other from './Other'
 
-const Register = ()=> {
+const Register = ({setFormData})=> {
 
-  const [formData, setFormData] = useState([])
+  
   const formik = useFormik({
     initialValues:{
       fullname: '',
@@ -33,7 +33,7 @@ const Register = ()=> {
       nationality:'Indian'
     },
     onSubmit: (values, {resetForm})=>{
-      setFormData([...formData, values])
+      setFormData(preVal => [...preVal, values])
       resetForm({ values: '' })
     }
   })
