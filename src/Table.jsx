@@ -24,7 +24,7 @@ const Table = ({formData})=>{
                         <p>Mobile: { activePerson?.mobile }</p>
                         <p>Govt Id: { activePerson?.idtype },   { activePerson?.idnumber }</p>
                         <p>Guardian: { activePerson?.guardiantype }, { activePerson?.name }</p>
-                        <p>Email: { activePerson?.name }</p>
+                        <p>Email: { activePerson?.email }</p>
                         <p>Emerygency Contact: { activePerson?.contact }</p>
                         <p>Address: { activePerson?.address }</p>
                         <p>State: { activePerson?.state }</p>
